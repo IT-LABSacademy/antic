@@ -1,36 +1,36 @@
 @font-face {
     src: url(fonts/Merriweather-Light.ttf);
-    font-family: 'Merri-300', sans-serif;
+    font-family: 'Merri-300';
 }
 
 @font-face {
     src: url(fonts/Merriweather-Bold.ttf);
-    font-family: 'Merri-700', sans-serif;
+    font-family: 'Merri-700';
 }
 
 @font-face {
     src: url(fonts/Varta-Light.ttf);
-    font-family: 'Varta-300', sans-serif;
+    font-family: 'Varta-300';
 }
 
 @font-face {
     src: url(fonts/Varta-Regular.ttf);
-    font-family: 'Varta-400', sans-serif;
+    font-family: 'Varta-400';
 }
 
 @font-face {
     src: url(fonts/Varta-Medium.ttf);
-    font-family: 'Varta-500', sans-serif;
+    font-family: 'Varta-500';
 }
 
 @font-face {
     src: url(fonts/Varta-SemiBold.ttf);
-    font-family: 'Varta-600', sans-serif;
+    font-family: 'Varta-600';
 }
 
 @font-face {
     src: url(fonts/Varta-Bold.ttf);
-    font-family: 'Varta-700', sans-serif;
+    font-family: 'Varta-700';
 }
 
 :root {
@@ -79,7 +79,20 @@ body {
 }
 
 /* Header */
-.header {}
+.header {
+    position: relative;
+}
+
+.header::before {
+    content: '';
+    width: 50%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background: url(images/header-bg.png) no-repeat right / cover;
+}
 
 /* header navbar */
 .header .navbar {}
@@ -88,7 +101,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 55px 0;
+    padding: 55px 15px;
 }
 
 .header .navbar .container .left {
@@ -112,7 +125,7 @@ body {
     color: var(--light-brown);
 }
 
-.header .container .right a {
+.header .navbar .container .right a {
     width: 50px;
     height: 50px;
     border: 2px solid var(--white);
@@ -123,7 +136,63 @@ body {
     justify-content: center;
 }
 
-.header .container .right a i {
+.header .navbar .container .right a i {
     font-size: 26px;
 }
 
+.header .navbar .container .burger {
+    display: none;
+}
+
+.header .navbar .container .burger a {
+    font-size: 26px;
+    color: var(--white);
+}
+
+/* Header hero */
+.header .hero .container {
+    padding-top: 100px;
+}
+
+.header .hero .container .subtitle {
+    font-size: 14px;
+    font-weight: 700;
+    font-family: 'Varta-700', sans-serif;
+    letter-spacing: 1px;
+    color: var(--terracota);
+}
+
+.header .hero .container .title {
+    font-size: 50px;
+    font-weight: 300;
+    font-family: 'Merri-300', sans-serif;
+    line-height: 70px;
+    color: var(--terracota);
+    max-width: 420px;
+    margin: 50px 0 30px;
+}
+
+.header .hero .container .text {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'Varta-300', sans-serif;
+    color: var(--light-brown);
+    line-height: 31px;
+    max-width: 420px;
+}
+
+.header .hero .container .arrow {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--terracota);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.header .hero .container .arrow i {
+    color: var(--terracota);
+    font-size: 20px;
+}

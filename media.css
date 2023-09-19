@@ -1,0 +1,35 @@
+/* 1025 */
+@media(max-width: 1025px) {}
+
+/* 770 */
+@media(max-width: 770px) {}
+
+/* 570 */
+@media(max-width: 570px) {
+
+    .header .hero .container .subtitle,
+    .header .hero .container .title,
+    .header .hero .container .text,
+    .header .hero .container .arrow,
+    .header .hero .container .arrow i{
+        color: white;
+        border-color: white;
+    }
+
+    .header::before{
+        width: 100%;
+        background: url(images/header-media-bg.png) no-repeat center / cover;
+    }
+
+    .header .navbar .container .right,
+    .header .navbar .container .left .menu {
+        display: none;
+    }
+
+    .header .navbar .container .burger {
+        display: block;
+    }
+}
+
+/* 425 */
+@media(max-width: 425px) {}
