@@ -1,198 +1,202 @@
 @font-face {
-    src: url(fonts/Merriweather-Light.ttf);
-    font-family: 'Merri-300';
+  src: url(fonts/Merriweather-Light.ttf);
+  font-family: 'Merri-300';
 }
 
 @font-face {
-    src: url(fonts/Merriweather-Bold.ttf);
-    font-family: 'Merri-700';
+  src: url(fonts/Merriweather-Bold.ttf);
+  font-family: 'Merri-700';
 }
 
 @font-face {
-    src: url(fonts/Varta-Light.ttf);
-    font-family: 'Varta-300';
+  src: url(fonts/Varta-Light.ttf);
+  font-family: 'Varta-300';
 }
 
 @font-face {
-    src: url(fonts/Varta-Regular.ttf);
-    font-family: 'Varta-400';
+  src: url(fonts/Varta-Regular.ttf);
+  font-family: 'Varta-400';
 }
 
 @font-face {
-    src: url(fonts/Varta-Medium.ttf);
-    font-family: 'Varta-500';
+  src: url(fonts/Varta-Medium.ttf);
+  font-family: 'Varta-500';
 }
 
 @font-face {
-    src: url(fonts/Varta-SemiBold.ttf);
-    font-family: 'Varta-600';
+  src: url(fonts/Varta-SemiBold.ttf);
+  font-family: 'Varta-600';
 }
 
 @font-face {
-    src: url(fonts/Varta-Bold.ttf);
-    font-family: 'Varta-700';
+  src: url(fonts/Varta-Bold.ttf);
+  font-family: 'Varta-700';
 }
 
 :root {
-    --white: #ffffff;
-    --black: #121212;
-    --terracota: #A06056;
-    --light-brown: #706458;
-    --background: #F3EEE8;
+  --white: #ffffff;
+  --black: #121212;
+  --terracota: #A06056;
+  --light-brown: #706458;
+  --background: #F3EEE8;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ul,
 li {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    display: inline-block;
-    text-decoration: none;
+  display: inline-block;
+  text-decoration: none;
 }
 
 button {
-    border: 0;
-    background: 0;
-    outline: 0;
-    cursor: pointer;
+  border: 0;
+  background: 0;
+  outline: 0;
+  cursor: pointer;
 }
 
 body {
-    font-weight: 400;
-    font-family: 'Varta-400', sans-serif;
-    background: var(--background);
-    color: var(--light-brown);
+  font-weight: 400;
+  font-family: 'Varta-400', sans-serif;
+  background: var(--background);
+  color: var(--light-brown);
 }
 
 .container {
-    width: 100%;
-    max-width: 1170px;
-    padding: 0 15px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 /* Header */
 .header {
-    position: relative;
+  position: relative;
 }
 
 .header::before {
-    content: '';
-    width: 50%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
-    background: url(images/header-bg.png) no-repeat right / cover;
+  content: '';
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background: url(images/header-bg.png) no-repeat right / cover;
 }
 
 /* header navbar */
 .header .navbar {}
 
 .header .navbar .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 55px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 15px;
 }
 
 .header .navbar .container .left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+}
+
+.header .navbar .container .left .logo-white {
+  display: none;
 }
 
 .header .navbar .container .left .menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
 }
 
 .header .navbar .container .left .menu .link {
-    font-size: 18px;
-    font-weight: 400;
-    font-family: 'Varta-400', sans-serif;
-    color: var(--light-brown);
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Varta-400', sans-serif;
+  color: var(--light-brown);
 }
 
 .header .navbar .container .right a {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--white);
-    border-radius: 50%;
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header .navbar .container .right a i {
-    font-size: 26px;
+  font-size: 26px;
 }
 
 .header .navbar .container .burger {
-    display: none;
+  display: none;
 }
 
 .header .navbar .container .burger a {
-    font-size: 26px;
-    color: var(--white);
+  font-size: 26px;
+  color: var(--white);
 }
 
 /* Header hero */
 .header .hero .container {
-    padding-top: 100px;
+  padding-top: 100px;
 }
 
 .header .hero .container .subtitle {
-    font-size: 14px;
-    font-weight: 700;
-    font-family: 'Varta-700', sans-serif;
-    letter-spacing: 1px;
-    color: var(--terracota);
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Varta-700', sans-serif;
+  letter-spacing: 1px;
+  color: var(--terracota);
 }
 
 .header .hero .container .title {
-    font-size: 50px;
-    font-weight: 300;
-    font-family: 'Merri-300', sans-serif;
-    line-height: 70px;
-    color: var(--terracota);
-    max-width: 420px;
-    margin: 50px 0 30px;
+  font-size: 50px;
+  font-weight: 300;
+  font-family: 'Merri-300', sans-serif;
+  line-height: 70px;
+  color: var(--terracota);
+  max-width: 420px;
+  margin: 50px 0 30px;
 }
 
 .header .hero .container .text {
-    font-size: 22px;
-    font-weight: 300;
-    font-family: 'Varta-300', sans-serif;
-    color: var(--light-brown);
-    line-height: 31px;
-    max-width: 420px;
+  font-size: 22px;
+  font-weight: 300;
+  font-family: 'Varta-300', sans-serif;
+  color: var(--light-brown);
+  line-height: 31px;
+  max-width: 420px;
 }
 
 .header .hero .container .arrow {
-    width: 50px;
-    height: 50px;
-    border: 2px solid var(--terracota);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--terracota);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .header .hero .container .arrow i {
-    color: var(--terracota);
-    font-size: 20px;
+  color: var(--terracota);
+  font-size: 20px;
 }
