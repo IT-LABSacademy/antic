@@ -21,7 +21,9 @@
 
     .header .hero .container .subtitle,
     .header .hero .container .title,
-    .header .hero .container .text {
+    .header .hero .container .text,
+    .header .hero .container .arrow,
+    .header .hero .container .arrow i {
         color: white;
         border-color: white;
     }

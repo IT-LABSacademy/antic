@@ -200,3 +200,65 @@ body {
   color: var(--terracota);
   font-size: 20px;
 }
+
+/* Email */
+.email {
+  margin: 300px 0 100px;
+}
+
+.email .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.email .container .text .title {
+  font-size: 35px;
+  font-weight: 300;
+  font-family: 'Merri-300', sans-serif;
+  color: var(--black);
+}
+
+.email .container .text .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Varta-400', sans-serif;
+  margin: 15px 0 10px;
+}
+
+.email .container .text .link {
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Varta-700', sans-serif;
+  color: var(--terracota);
+}
+
+.email .container .text .link i {
+  font-size: 10px;
+}
+
+.email .container form {
+  width: 455px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email .container form input {
+  flex-grow: 1;
+  padding: 15px 10px;
+  border: 0;
+  outline: 0;
+  background: #f3eee8;
+}
+
+.email .container form .btn {
+  padding: 15px 30px;
+  background: #534B42;
+  border-radius: 1px;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: 'Varta-700', sans-serif;
+  color: var(--white);
+  text-transform: capitalize;
+}
