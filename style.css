@@ -210,6 +210,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .email .container .text .title {
@@ -261,4 +262,97 @@ body {
   font-family: 'Varta-700', sans-serif;
   color: var(--white);
   text-transform: capitalize;
+}
+
+/* Inspiration */
+.inspiration {
+  padding: 70px 0;
+}
+
+.inspiration .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.inspiration .slider img {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+}
+
+.inspiration .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  gap: 30px;
+}
+
+.inspiration .content .title {
+  font-size: 45px;
+  font-weight: 300;
+  font-family: 'Merri-300', sans-serif;
+  color: #534B42;
+}
+
+.inspiration .content .text {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: 'Varta-400', sans-serif;
+  line-height: 25px;
+  width: 400px;
+}
+
+.inspiration .content .navigation .arrows {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+}
+
+.inspiration .content .navigation .arrows .arrow {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--terracota);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--terracota);
+  cursor: pointer;
+}
+
+.inspiration .content .navigation .number p {
+  font-size: 18px;
+  opacity: 50%;
+  margin-top: 20px;
+}
+
+.inspiration .cards{
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inspiration .cards .card {
+  width: 165px;
+}
+
+.inspiration .cards .card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inspiration .cards .card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Varta-700', sans-serif;
+  color: var(--black);
+  margin-top: 15px;
 }

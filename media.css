@@ -1,8 +1,28 @@
 /* 1025 */
-@media(max-width: 1025px) {}
+@media(max-width: 1025px) {
+    .inspiration .slider {
+        width: 100%;
+        overflow-x: scroll;
+    }
+}
+
+/* 970 */
+@media(max-width: 970px) {
+    .email {
+        margin: 150px 0 90px;
+    }
+
+    .email .container form {
+        margin-left: auto;
+    }
+}
 
 /* 770 */
-@media(max-width: 770px) {}
+@media(max-width: 770px) {
+    .inspiration .content .text {
+        order: 1;
+    }
+}
 
 /* 570 */
 @media(max-width: 570px) {
@@ -48,6 +68,14 @@
     .header .hero .container .arrow {
         margin: 50px auto 0;
     }
+
+    .email {
+        margin: 60px 0;
+    }
+
+    .email .container {
+        gap: 60px;
+    }
 }
 
 /* 425 */
@@ -59,7 +87,24 @@
     .header .hero .container .text {
         font-size: 20px;
     }
+
+    .email .container form {
+        flex-wrap: wrap;
+    }
+
+    .inspiration .slider,
+    .inspiration .content .navigation {
+        display: none;
+    }
+
+    .inspiration .cards {
+        display: flex;
+    }
 }
 
 /* 350 */
-@media(max-width: 350px) {}
+@media(max-width: 350px) {
+    .inspiration .cards .card {
+        width: 145px;
+    }
+}
